@@ -15,3 +15,11 @@ async def bot_start(message: types.Message):
         pass
     await message.answer(f"Hydra Marketing приветствует Вас, желаем хороших покупок и ровных подъёмов💥")
     await message.answer(f"🔝 Главное Меню", reply_markup=asosiy_buttonlar)
+
+@dp.message_handler(text="ОТЗЫВЫ 🍚")
+async def otziv(message: types.Message):
+    await message.answer(text=f"Отзывы: @PrimaryDreams")
+
+@dp.message_handler(text="ПОДДЕРЖКА👨‍💻")
+async def tex_poderjka(message: types.Message):
+    await message.answer(text="Тех.поддержка: @PrimaryDreams")
